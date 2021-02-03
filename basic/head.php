@@ -61,8 +61,8 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
             <ul id="gnb_1dul">
                 <li class="gnb_1dli gnb_mnal"><button type="button" class="gnb_menu_btn" title="전체메뉴"><i class="fa fa-bars" aria-hidden="true"></i><span class="sound_only">전체메뉴열기</span></button></li>
                 <?php
-				$menu_datas = get_menu_db(0, true);
-				$gnb_zindex = 999; // gnb_1dli z-index 값 설정용
+                $menu_datas = get_menu_db(0, true);
+                $gnb_zindex = 999; // gnb_1dli z-index 값 설정용
                 $i = 0;
                 foreach( $menu_datas as $row ){
                     if( empty($row) ) continue;
@@ -156,5 +156,9 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 <div id="wrapper">
     <div id="container_wr">
 
-    <div id="container">
-        <?php if (!defined("_INDEX_")) { ?><h2 id="container_title"><span title="<?php echo get_text($g5['title']); ?>"><?php echo get_head_title($g5['title']); ?></span></h2><?php }
+    <div id="container" <?if(defined("_INDEX_")){echo "style=\"width:100%\"";}?>  >
+        <? if (!defined("_INDEX_")) { ?>
+          <h2 id="container_title"><span title="<?php echo get_text($g5['title']); ?>">
+          <? echo get_head_title($g5['title']); ?></span></h2><?}?>
+
+          
