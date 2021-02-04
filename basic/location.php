@@ -9,6 +9,13 @@ $g5['title'] = "오시는길";
 
 include_once(G5_THEME_PATH.'/head.php');
 ?>
+
+<script>
+$(document).ready(function(){
+$('#snb > li:nth-child(<?php echo $menuNum; ?>)').addClass("co_id<?php echo $co_id; ?> active");
+$('#snb > li:nth-child(<?php echo $menuNum; ?>) > ul > li:nth-child(<?php echo $menuNum2; ?>)').addClass("snb2d_co_id<?php echo $co_id; ?>  active");
+});
+</script>
 <!-- * 카카오맵 - 지도퍼가기 -->
 <!-- 1. 지도 노드 -->
 <div id="daumRoughmapContainer1612328491012" class="root_daum_roughmap root_daum_roughmap_landing"></div>
