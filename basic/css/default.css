@@ -448,3 +448,11 @@ box-sizing:content-box;
 
 
 .loView{text-align: center;font-size:2em;font-weight:bold;color:blue}
+
+.subvisual{height: 200px;background: pink;}
+.subvisual #page_title{height: 100%;display:flex;justify-content: center;align-items: center;
+}
+.subvisual .title{background: skyblue;}
+.subVisual .sbtImg.subTopbg_01{background:blue;}
+.subVisual .sbtImg.subTopbg_02{background:orange;}
+.subVisual .sbtImg.subTopbg_03{background:green;}
